@@ -10,6 +10,6 @@ glob_pow <- data$Global_active_power
 Sys.setlocale("LC_TIME", "C")
 date_paste <- paste(data$Date, data$Time)
 dates <- dmy_hms(date_paste)
-png(file="plot2.png", width = 480, height = 480)
 plot(glob_pow ~ dates, xlab = " ", ylab = "Global Active Power (kilowatts)", type = "l")
+dev.copy(png, file="plot2.png", width = 480, height = 480)
 dev.off()
