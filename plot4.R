@@ -22,15 +22,9 @@ plot(Voltage ~ Date, sub_data, type = "l", ylab = "Voltage", xlab = "datetime")
 
 # Third plot
 sub_met = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3")
-<<<<<<< HEAD
 plot(Sub_metering_1 ~ Date, sub_data, type = "l", xlab = " ", ylab = "Energy sub metering")
 lines(Sub_metering_2 ~ Date, sub_data, type = "l", col = "red")
 lines(Sub_metering_3 ~ Date, sub_data, type = "l", col = "blue")
-=======
-plot(data$Sub_metering_1 ~ dates, type = "l", xlab = " ", ylab = "Energy sub metering")
-lines(data$Sub_metering_2 ~ dates, type = "l", col = "red")
-lines(data$Sub_metering_3 ~ dates, type = "l", col = "blue")
->>>>>>> 979b4174373e01d2256bcf750775a016992440bb
 legend("topright", legend = sub_met, bty = "n", lty = c(1,1), cex = 1.0, col = c("black","red", "blue"))
 
 # Fourth plot
